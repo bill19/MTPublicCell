@@ -16,6 +16,10 @@
 		6D03A3251DBF454300C91972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D03A3231DBF454300C91972 /* LaunchScreen.storyboard */; };
 		6D03A3301DBF454300C91972 /* MTPublicCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D03A32F1DBF454300C91972 /* MTPublicCellTests.m */; };
 		6D03A33B1DBF454300C91972 /* MTPublicCellUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D03A33A1DBF454300C91972 /* MTPublicCellUITests.m */; };
+		6D03A34A1DBF503800C91972 /* MTPublicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D03A3491DBF503800C91972 /* MTPublicCell.m */; };
+		6D5CFD711DBF557400CED665 /* MTPublicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5CFD701DBF557400CED665 /* MTPublicModel.m */; };
+		6DAB32851DC74AED00E18313 /* FramerWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAB32841DC74AED00E18313 /* FramerWorkViewController.m */; };
+		6DF463D41DC0AB59009093C2 /* WebKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF463D31DC0AB59009093C2 /* WebKitController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		6D03A3361DBF454300C91972 /* MTPublicCellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTPublicCellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D03A33A1DBF454300C91972 /* MTPublicCellUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTPublicCellUITests.m; sourceTree = "<group>"; };
 		6D03A33C1DBF454300C91972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D03A3481DBF503800C91972 /* MTPublicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPublicCell.h; sourceTree = "<group>"; };
+		6D03A3491DBF503800C91972 /* MTPublicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPublicCell.m; sourceTree = "<group>"; };
+		6D5CFD6F1DBF557400CED665 /* MTPublicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPublicModel.h; sourceTree = "<group>"; };
+		6D5CFD701DBF557400CED665 /* MTPublicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPublicModel.m; sourceTree = "<group>"; };
+		6DAB32831DC74AED00E18313 /* FramerWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FramerWorkViewController.h; sourceTree = "<group>"; };
+		6DAB32841DC74AED00E18313 /* FramerWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FramerWorkViewController.m; sourceTree = "<group>"; };
+		6DF463D21DC0AB59009093C2 /* WebKitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebKitController.h; sourceTree = "<group>"; };
+		6DF463D31DC0AB59009093C2 /* WebKitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebKitController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +119,14 @@
 				6D03A3161DBF454300C91972 /* AppDelegate.m */,
 				6D03A3181DBF454300C91972 /* ViewController.h */,
 				6D03A3191DBF454300C91972 /* ViewController.m */,
+				6DF463D21DC0AB59009093C2 /* WebKitController.h */,
+				6DF463D31DC0AB59009093C2 /* WebKitController.m */,
+				6DAB32831DC74AED00E18313 /* FramerWorkViewController.h */,
+				6DAB32841DC74AED00E18313 /* FramerWorkViewController.m */,
+				6D03A3481DBF503800C91972 /* MTPublicCell.h */,
+				6D03A3491DBF503800C91972 /* MTPublicCell.m */,
+				6D5CFD6F1DBF557400CED665 /* MTPublicModel.h */,
+				6D5CFD701DBF557400CED665 /* MTPublicModel.m */,
 				6D03A31B1DBF454300C91972 /* Main.storyboard */,
 				6D03A3211DBF454300C91972 /* Assets.xcassets */,
 				6D03A3231DBF454300C91972 /* LaunchScreen.storyboard */,
@@ -279,7 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D03A34A1DBF503800C91972 /* MTPublicCell.m in Sources */,
+				6D5CFD711DBF557400CED665 /* MTPublicModel.m in Sources */,
 				6D03A31A1DBF454300C91972 /* ViewController.m in Sources */,
+				6DF463D41DC0AB59009093C2 /* WebKitController.m in Sources */,
+				6DAB32851DC74AED00E18313 /* FramerWorkViewController.m in Sources */,
 				6D03A3201DBF454300C91972 /* MTPublicCell.xcdatamodeld in Sources */,
 				6D03A3171DBF454300C91972 /* AppDelegate.m in Sources */,
 				6D03A3141DBF454300C91972 /* main.m in Sources */,
@@ -518,6 +542,7 @@
 				6D03A3411DBF454300C91972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D03A3421DBF454300C91972 /* Build configuration list for PBXNativeTarget "MTPublicCellTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +551,7 @@
 				6D03A3441DBF454300C91972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D03A3451DBF454300C91972 /* Build configuration list for PBXNativeTarget "MTPublicCellUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +560,7 @@
 				6D03A3471DBF454300C91972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
