@@ -18,7 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"ios知识框架";
     [self setupWebView];
 }
 

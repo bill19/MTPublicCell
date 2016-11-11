@@ -11,4 +11,6 @@
 
 @interface WebKitController : UIViewController
 
+@property (nonatomic, copy) NSString *urlString;
+
 @end
