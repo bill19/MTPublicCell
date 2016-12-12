@@ -34,7 +34,6 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self setupSubViews];
-        [self setupLayout];
     }
     return self;
 }
@@ -42,7 +41,7 @@
 - (void)setupSubViews{
 
     UILabel *titleLabel = [[UILabel alloc] init];
-    [titleLabel setFont:[UIFont systemFontOfSize:16]];
+    [titleLabel setFont:MTFont16];
     _titleLabel = titleLabel;
     [self.contentView addSubview:_titleLabel];
 
@@ -53,28 +52,22 @@
 
 }
 
-- (void)setupLayout{
-
-    CGFloat space = 5;
-    [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.mas_left).offset(space*2);
-        make.top.equalTo(self.mas_top).offset(space);
-        make.bottom.equalTo(self.mas_bottom).offset(space);
-    }];
-
-    [_textField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(_titleLabel.mas_right).offset(space*4);
-        make.top.equalTo(self.mas_top).offset(space);
-        make.bottom.equalTo(self.mas_bottom).offset(space);
-    }];
-}
 
 
 - (void)setTextModel:(MTTextModel *)textModel{
 
+
+    CGFloat space = 5;
+    CGFloat viewH = self.contentView.bounds.size.height;
     _textModel = textModel;
     _titleLabel.text = _textModel.textTitle;
     _textField.placeholder = _textModel.textDetial;
+
+    
+    NSDictionary *attributes = @{NSFontAttributeName : MTFont16};
+    CGSize titleSize = [_textModel.textTitle sizeWithAttributes:attributes];
+    [_titleLabel setFrame:CGRectMake(space, 0, titleSize.width, viewH)];
+    [_textField setFrame:CGRectMake(space*3 + titleSize.width, 0, ScreenW -titleSize.width- space*4, viewH)];
 
 }
 

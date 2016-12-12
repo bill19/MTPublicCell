@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "ViewController2.h"
+#import "ViewController3.h"
 
 @interface AppDelegate ()
 
@@ -18,10 +20,31 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    ViewController *viewController = [[ViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
-    self.window.rootViewController = nav;
-    
+    //控制器1s
+    ViewController *vc1 = [[ViewController alloc] init];
+    UITabBarController *tabbarVc = [[UITabBarController alloc] init];
+    UITabBarItem *item1 = [[UITabBarItem alloc] initWithTitle:@"111111" image:[[UIImage imageNamed:@"MyP"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"MyP"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    tabbarVc.tabBarItem = item1;
+    UINavigationController *oneVC = [[UINavigationController alloc] initWithRootViewController:vc1];
+
+    //控制器2s
+    ViewController2 *vc2 = [[ViewController2 alloc] init];
+    UITabBarItem *item2 = [[UITabBarItem alloc] initWithTitle:@"222222" image:[[UIImage imageNamed:@"MyP"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"MyP"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    tabbarVc.tabBarItem = item2;
+    UINavigationController *twoVC = [[UINavigationController alloc] initWithRootViewController:vc2];
+
+
+    //控制器3s
+    ViewController3 *vc3 = [[ViewController3 alloc] init];
+    UITabBarItem *item3 = [[UITabBarItem alloc] initWithTitle:@"333333" image:[[UIImage imageNamed:@"MyP"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"MyP"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    tabbarVc.tabBarItem = item3;
+    UINavigationController *thirdVC = [[UINavigationController alloc] initWithRootViewController:vc3];
+
+
+    tabbarVc.viewControllers = @[oneVC,twoVC,thirdVC];
+
+    self.window.rootViewController = tabbarVc;
+
     return YES;
 }
 

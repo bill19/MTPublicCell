@@ -8,11 +8,29 @@
 
 #import "MTPublicCController.h"
 
+
+int Sort(int a[], int nsize);
+int Insert(int a[], int nPos, int nInserNum);
+int Delete(int a[], int nPos, int nDelNum);
+int Find(int a[], int nDelNum);
+
+
+struct Student{
+
+    int num;
+    char name[20];
+    char sex;
+    int  age;
+    float score;
+    char addr[30];
+};
 @interface MTPublicCController ()
 
 @end
 
 @implementation MTPublicCController
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -331,10 +349,65 @@ void Heap_sort(int data[],int long_n) /* 堆排序函数 */
         HeapAdjust(data,1,i-1);
     }
 }
-//
-//地址：
-//http://wenku.baidu.com/view/c3054c0f7cd184254b353516.html
-//
-//本文转载：http://blog.csdn.net/wengwuzi/archive/2008/10/05/3017968.aspx
 
+
+int Sort(int a[], int nsize){
+
+    int i,j,k;
+    for(j=0; j<nsize; j++)   /* 气泡法要排序n次*/
+    {
+        for(i=0; i<nsize-j; i++)  /* 值比较大的元素沉下去后，只把剩下的元素中的最大值再沉下去就可以啦 */
+        {
+            if(a[i]>a[i+1])  /* 把值比较大的元素沉到底 */
+            {
+                k=a[i];
+                a[i]=a[i+1];
+                a[i+1]=k;
+            }
+        }
+    }
+    return *a;
+}
+
+int Insert(int a[], int nPos, int nInserNum){
+
+    for (int i = 0 ; i < sizeof(*a); i++) {
+
+
+    }
+    return *a;
+}
+int Delete(int a[], int nPos, int nDelNum){
+
+
+    return *a;
+}
+
+int Find(int a[], int nDelNum){
+
+
+    return *a;
+}
+
+
+//int mainx(){
+//
+//    struct Student a,b,c, *head, *p;
+//    a.num = 01; a.score = 90;
+//    b.num = 02; b.score = 10;
+//    c.num = 03; c.score = 99;
+//    head = &a;
+//    a.next = &a;
+//    a.next = &b;
+//    b.next = &c;
+//    c.next = NULL;
+//    p = head;
+//
+//    do {
+//        printf("%d %5.1f \n",p->num , p->score);
+//        p = p -> next;
+//
+//    } while (p!=NULL);
+//    return 0;
+//}
 @end

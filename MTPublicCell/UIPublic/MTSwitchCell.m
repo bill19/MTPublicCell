@@ -43,7 +43,7 @@
 - (void)setupSubViews{
 
     UILabel *titleLabel = [[UILabel alloc] init];
-    [titleLabel setFont:[UIFont systemFontOfSize:16]];
+    [titleLabel setFont:MTFont16];
     _titleLabel = titleLabel;
     [self.contentView addSubview:_titleLabel];
 

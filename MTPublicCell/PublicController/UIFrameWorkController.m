@@ -15,6 +15,13 @@
 
 #import "MTSwitchCell.h"
 #import "MTSwitchModel.h"
+
+#import "MTSelectCell.h"
+#import "MTSelectModel.h"
+
+#import "MTSelectBtnCell.h"
+#import "MTSelectBtnModel.h"
+
 #import "MTPublicHeader.h"
 
 @interface UIFrameWorkController ()<UITableViewDelegate, UITableViewDataSource>
@@ -24,6 +31,10 @@
 @property (nonatomic, strong) NSMutableArray *dataText;
 
 @property (nonatomic, strong) NSMutableArray *dataSwitch;
+
+@property (nonatomic, strong) NSMutableArray *dataSelect;
+
+@property (nonatomic, strong) NSMutableArray *dataBtnSelect;
 
 @property (nonatomic, weak) UITableView *tableView;
 
@@ -38,7 +49,7 @@
     [self setupTableView];
     [self setupSubViews];
 
-    [self setupButtonView];
+//    [self setupButtonView];
 
 }
 
@@ -95,6 +106,29 @@
 
     [self.dataSwitch addObjectsFromArray:@[switchM1,switchM2]];
 
+#pragma mark - dataSelect
+    MTSelectModel *selectM1 = [[MTSelectModel alloc] init];
+    selectM1.selectTitle = @"按钮";
+    selectM1.contentText = @"YES";
+
+    MTSelectModel *selectM2 = [[MTSelectModel alloc] init];
+    selectM2.selectTitle = @"按钮";
+    selectM2.contentText = @"YES";
+
+    [self.dataSelect addObjectsFromArray:@[selectM1,selectM2]];
+
+#pragma mark - dataBtnSelect
+    MTSelectBtnModel *btnSelectM1 = [[MTSelectBtnModel alloc] init];
+    btnSelectM1.selectTitle = @"按钮";
+    btnSelectM1.selectBtnNum = 1;
+    btnSelectM1.isSelect = YES;
+
+    MTSelectBtnModel *btnSelectM2 = [[MTSelectBtnModel alloc] init];
+    btnSelectM2.selectTitle = @"按钮";
+    btnSelectM2.selectBtnNum = 1;
+    btnSelectM2.isSelect = NO;
+
+    [self.dataBtnSelect addObjectsFromArray:@[btnSelectM1,btnSelectM2]];
 
 }
 
@@ -169,11 +203,27 @@
     return _dataSwitch;
 }
 
+- (NSMutableArray *)dataSelect{
+
+    if (!_dataSelect) {
+        _dataSelect = [NSMutableArray array];
+    }
+    return _dataSelect;
+}
+
+- (NSMutableArray *)dataBtnSelect{
+
+    if (!_dataBtnSelect) {
+        _dataBtnSelect = [NSMutableArray array];
+    }
+    return _dataBtnSelect;
+}
+
 #pragma mark - tableview delegate
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
 
-    return 3;
+    return 5;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
@@ -194,6 +244,14 @@
 
         case 2:
             return  _dataSwitch.count;
+            break;
+
+        case 3:
+            return  _dataSelect.count;
+            break;
+
+        case 4:
+            return  _dataBtnSelect.count;
             break;
 
         default:
@@ -230,6 +288,26 @@
             MTSwitchModel *switchModel = _dataSwitch[indexPath.row];
             switchCell.switchModel = switchModel;
             return switchCell;
+
+        }
+            break;
+
+        case 3:
+        {
+            MTSelectCell *selectCell = [MTSelectCell selectCell:_tableView];
+            MTSelectModel *selectModel = _dataSelect[indexPath.row];
+            selectCell.selectModel = selectModel;
+            return selectCell;
+
+        }
+            break;
+
+        case 4:
+        {
+            MTSelectBtnCell *selectBtnCell = [MTSelectBtnCell selectBtnCell:_tableView];
+            MTSelectBtnModel *selectBtnModel = _dataBtnSelect[indexPath.row];
+            selectBtnCell.selectBtnModel = selectBtnModel;
+            return selectBtnCell;
 
         }
             break;

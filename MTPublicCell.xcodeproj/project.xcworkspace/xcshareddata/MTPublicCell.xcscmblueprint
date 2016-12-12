@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DEA1B421C16042CAB8D0FB24585F3F665FFC2853",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "b2054fed-5f2e-4295-bcc7-859b93e433ac" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DEA1B421C16042CAB8D0FB24585F3F665FFC2853" : 9223372036854775807,
+    "b2054fed-5f2e-4295-bcc7-859b93e433ac" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0679CDB5-EE14-4AE5-B3F2-B11C4224184C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DEA1B421C16042CAB8D0FB24585F3F665FFC2853" : "MTPublicCell\/",
+    "b2054fed-5f2e-4295-bcc7-859b93e433ac" : "..\/..\/mm\/maimaiIOS"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MTPublicCell",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MTPublicCell.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bill19\/MTPublicCell.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DEA1B421C16042CAB8D0FB24585F3F665FFC2853"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.16.13.104:8080\/svn\/maimaiIOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "b2054fed-5f2e-4295-bcc7-859b93e433ac"
+    }
+  ]
+}

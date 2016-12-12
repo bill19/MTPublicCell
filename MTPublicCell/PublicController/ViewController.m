@@ -11,6 +11,16 @@
 #import "FramerWorkViewController.h"
 #import "UIFrameWorkController.h"
 #import "MTPublicCController.h"
+#import "MTShowListController.h"
+#import "MTTestController.h"
+#import "SCViewController.h"
+#import "MTDropViewController.h"
+#import "MTACActionSheetController.h"
+#import "MTAlertViewController.h"
+#import "MTCacheController.h"
+#import "MTTextController.h"
+#import "MTAttriController.h"
+#import "MTRegularExpressionViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 //展示
@@ -18,18 +28,16 @@
 
 @property (nonatomic, strong) NSArray *dataSource;
 
-@property (nonatomic, weak) UIStoryboard *sb;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"PublicCell";
     [self setupTableView];
-    self.dataSource = @[@"HTML展示",@"ios框架化内容解析",@"基本UI控件展示",@"嵌入百度页面",@"c语言程序"];
+    self.dataSource = @[@"HTML展示",@"ios框架化内容解析",@"基本UI控件展示",@"嵌入百度页面",@"c语言程序",@"show",@"testUrl",@"折线图",@"下拉菜单",@"ACSheet",@"MTAlertViewController",@"MTCache",@"MTTextController",@"MTAttriController",@"正则表达式"];
 }
 
 #pragma mark - 创建初始化
@@ -103,6 +111,59 @@
             [self pushToVc:pubC andNumber:indexPath.row];
         }
             break;
+        case 5:{
+            MTShowListController * showC = [[MTShowListController alloc] init];
+            [self pushToVc:showC andNumber:indexPath.row];
+        }
+            break;
+
+        case 6:{
+            MTTestController * testMVC = [[MTTestController alloc] init];
+            [self pushToVc:testMVC andNumber:indexPath.row];
+        }
+
+            break;
+        case 7:{
+            SCViewController * scv = [[SCViewController alloc] init];
+            [self pushToVc:scv andNumber:indexPath.row];
+        }
+            break;
+        case 8:{
+            MTDropViewController * drp = [[MTDropViewController alloc] init];
+            [self pushToVc:drp andNumber:indexPath.row];
+        }
+            break;
+        case 9:{
+            MTACActionSheetController * actionSheet = [[MTACActionSheetController alloc] init];
+            [self pushToVc:actionSheet andNumber:indexPath.row];
+        }
+            break;
+        case 10:{
+            MTAlertViewController * actionSheet = [[MTAlertViewController alloc] init];
+            [self pushToVc:actionSheet andNumber:indexPath.row];
+        }
+            break;
+        case 11:{
+            MTCacheController * actionSheet = [[MTCacheController alloc] init];
+            [self pushToVc:actionSheet andNumber:indexPath.row];
+        }
+            break;
+
+        case 12:{
+            MTTextController *textC = [[MTTextController alloc] init];
+            [self pushToVc:textC andNumber:indexPath.row];
+        }
+            break;
+
+        case 13:{
+
+            MTAttriController *attVc = [[MTAttriController alloc] init];
+            [self pushToVc:attVc andNumber:indexPath.row];
+        }
+        case 14:{
+            MTRegularExpressionViewController *reVc = [[MTRegularExpressionViewController alloc] init];
+            [self pushToVc:reVc andNumber:indexPath.row];
+        }
         default:
             break;
     }
