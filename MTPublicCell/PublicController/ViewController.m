@@ -22,11 +22,13 @@
 #import "MTAttriController.h"
 #import "MTRegularExpressionViewController.h"
 
-@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate>
 //展示
 @property (nonatomic, weak) UITableView *tableView;
 
 @property (nonatomic, strong) NSArray *dataSource;
+
+@property (nonatomic, weak) UIWebView *webView;
 
 @end
 
@@ -37,7 +39,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"PublicCell";
     [self setupTableView];
-    self.dataSource = @[@"HTML展示",@"ios框架化内容解析",@"基本UI控件展示",@"嵌入百度页面",@"c语言程序",@"show",@"testUrl",@"折线图",@"下拉菜单",@"ACSheet",@"MTAlertViewController",@"MTCache",@"MTTextController",@"MTAttriController",@"正则表达式"];
+    self.dataSource = @[@"HTML展示",@"ios框架化内容解析",@"基本UI控件展示",@"嵌入百度页面",@"c语言程序",@"show",@"testUrl",@"折线图",@"下拉菜单",@"ACSheet",@"MTAlertViewController",@"MTCache",@"MTTextController",@"MTAttriController",@"正则表达式",@"打电话"];
 }
 
 #pragma mark - 创建初始化
@@ -160,14 +162,41 @@
             MTAttriController *attVc = [[MTAttriController alloc] init];
             [self pushToVc:attVc andNumber:indexPath.row];
         }
+            break;
         case 14:{
             MTRegularExpressionViewController *reVc = [[MTRegularExpressionViewController alloc] init];
             [self pushToVc:reVc andNumber:indexPath.row];
         }
+            break;
+
+        case 15:{
+            [self telPhone];
+        }
+            break;
+        case 16:{
+            [self telPhone];
+        }
+            break;
         default:
             break;
     }
 }
+
+- (void)telPhone{
+
+    UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"拨打电话" message:@"186xxxx6979" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"拨打", nil];
+    
+    [alertview show];
+}
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
+
+    if (buttonIndex == 1) {
+        NSMutableString * str=[[NSMutableString alloc] initWithFormat:@"tel:%@",@"186xxxx6979"];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+    }
+
+}
+
 
 
 - (void)pushToVc:(UIViewController *)vc andNumber:(NSInteger)number{

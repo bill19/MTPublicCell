@@ -95,6 +95,7 @@
 		6D3582491DE2C54600066B65 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3582371DE2C54600066B65 /* UIRefreshControl+AFNetworking.m */; };
 		6D35824A1DE2C54600066B65 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3582391DE2C54600066B65 /* UIWebView+AFNetworking.m */; };
 		6D35824E1DE2C5CC00066B65 /* MTCacheObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D35824D1DE2C5CC00066B65 /* MTCacheObj.m */; };
+		6D3748E41E0777A100F1BB17 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3748E31E0777A100F1BB17 /* UIColor+Hex.m */; };
 		6D505A001DDE8E210045A5AB /* WSDropMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5059FF1DDE8E210045A5AB /* WSDropMenuView.m */; };
 		6D505A051DDE8E740045A5AB /* MTDropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D505A041DDE8E740045A5AB /* MTDropViewController.m */; };
 		6D505A141DDE90F80045A5AB /* MTACActionSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D505A131DDE90F80045A5AB /* MTACActionSheetController.m */; };
@@ -358,6 +359,8 @@
 		6D3582391DE2C54600066B65 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		6D35824C1DE2C5CC00066B65 /* MTCacheObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCacheObj.h; sourceTree = "<group>"; };
 		6D35824D1DE2C5CC00066B65 /* MTCacheObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCacheObj.m; sourceTree = "<group>"; };
+		6D3748E21E0777A100F1BB17 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		6D3748E31E0777A100F1BB17 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		6D5059FE1DDE8E210045A5AB /* WSDropMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDropMenuView.h; sourceTree = "<group>"; };
 		6D5059FF1DDE8E210045A5AB /* WSDropMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSDropMenuView.m; sourceTree = "<group>"; };
 		6D505A031DDE8E740045A5AB /* MTDropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDropViewController.h; sourceTree = "<group>"; };
@@ -1053,6 +1056,8 @@
 				6DE934601DF7AA4500FEBFC9 /* SHTTools.m */,
 				6DA772D61DFE3BC6004CE685 /* MTRETool.h */,
 				6DA772D71DFE3BC6004CE685 /* MTRETool.m */,
+				6D3748E21E0777A100F1BB17 /* UIColor+Hex.h */,
+				6D3748E31E0777A100F1BB17 /* UIColor+Hex.m */,
 			);
 			path = MTTools;
 			sourceTree = "<group>";
@@ -1255,6 +1260,7 @@
 				6D3582421DE2C54600066B65 /* AFAutoPurgingImageCache.m in Sources */,
 				6DAFD1FA1DDEFD3600A58D03 /* UIView+TYAutoLayout.m in Sources */,
 				6D35823F1DE2C54600066B65 /* AFURLSessionManager.m in Sources */,
+				6D3748E41E0777A100F1BB17 /* UIColor+Hex.m in Sources */,
 				6D187CCF1DCB2C04002C07E8 /* View+MASAdditions.m in Sources */,
 				6D8E9D381DE2D1DB001511F6 /* YYLabel.m in Sources */,
 				6D3582471DE2C54600066B65 /* UIImageView+AFNetworking.m in Sources */,

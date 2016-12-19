@@ -19,11 +19,15 @@
 
 
 
-#pragma mark -三方的工具
+#pragma mark - 三方的工具
 #import "AFNetworking.h"
 #import "Masonry.h"
 #import "YYCache.h"
 #import "YYText.h"
+
+
+#pragma mark - 分类
+#import "UIColor+Hex.h"
 
 #define ScreenW [[UIScreen mainScreen] bounds].size.width
 #define ScreenH [[UIScreen mainScreen] bounds].size.height

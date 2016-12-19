@@ -7,8 +7,11 @@
 //
 
 #import "ViewController2.h"
+#import "MTPublicHeader.h"
 
 @interface ViewController2 ()
+
+@property (nonatomic, strong) UIView *blurBackView;
 
 @end
 
@@ -19,7 +22,28 @@
     // Do any additional setup after loading the view.
     self.title = @"VC2";
     self.view.backgroundColor = [UIColor redColor];
+
+    [self.view addSubview:self.blurBackView];
 }
+
+
+- (UIView *)blurBackView
+{
+    if (_blurBackView == nil) {
+        _blurBackView = [[UIView alloc] init];
+        _blurBackView.frame = CGRectMake(0, 100, ScreenW, 64);
+        CAGradientLayer *gradientLayer = [[CAGradientLayer alloc] init];
+        gradientLayer.frame = CGRectMake(0, 100, ScreenW, 64);
+        gradientLayer.colors = @[(__bridge id)[UIColor colorWithHex:0x040012 alpha:0.76].CGColor,(__bridge id)[UIColor colorWithHex:0x040012 alpha:0.28].CGColor];
+        gradientLayer.startPoint = CGPointMake(0, 0);
+        gradientLayer.endPoint = CGPointMake(0, 1.0);
+        [_blurBackView.layer addSublayer:gradientLayer];
+        _blurBackView.userInteractionEnabled = NO;
+        _blurBackView.alpha = 0.5;
+    }
+    return _blurBackView;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
