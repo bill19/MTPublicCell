@@ -54,4 +54,40 @@
     }
     return data;
 }
+
+
+//头像/图片点击产生大图 ,截取路径
++ (NSString *)cutStringWithPath:(NSString *)path{
+
+    NSString *str = [NSString stringWithFormat:@"%@",path];
+
+    NSMutableString *newString = [[NSMutableString alloc] initWithCapacity:str.length];
+
+    for (NSInteger i = str.length - 1; i >= 0 ; i--) {
+        unichar ch = [str characterAtIndex:i];
+        [newString appendFormat:@"%c",ch];
+    }
+
+    NSRange startRange = [newString rangeOfString:@"."];
+    NSRange endRange = [newString rangeOfString:@"_"];
+    NSRange range = NSMakeRange(startRange.location + startRange.length, endRange.location - startRange.location - startRange.length);
+    NSString *temp1;
+    if (range.length != 1) {
+        temp1 = @"";
+    }else{
+        temp1 = [NSString stringWithFormat:@".%@_",[newString substringWithRange:range]];
+    }
+
+    NSString *temp2 = [newString stringByReplacingOccurrencesOfString:temp1 withString:@"."];
+
+    NSMutableString *tempstr = [[NSMutableString alloc] initWithCapacity:temp2.length];
+
+    for (NSInteger i = temp2.length - 1; i >= 0 ; i--) {
+        unichar ch = [temp2 characterAtIndex:i];
+        [tempstr appendFormat:@"%c",ch];
+    }
+
+    return tempstr;
+
+}
 @end

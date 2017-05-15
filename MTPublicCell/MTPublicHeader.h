@@ -16,7 +16,7 @@
 #import "SHTTools.h"
 #import "MTAttributedTools.h"
 #import "MTRETool.h"
-
+#import "SHTTools.h"
 
 
 #pragma mark - 三方的工具
@@ -24,6 +24,7 @@
 #import "Masonry.h"
 #import "YYCache.h"
 #import "YYText.h"
+
 
 
 #pragma mark - 分类
@@ -41,6 +42,7 @@
 #define MTFont15 [UIFont systemFontOfSize:15]
 #define MTFont16 [UIFont systemFontOfSize:16]
 #define MTFont17 [UIFont systemFontOfSize:17]
+
 
 
 #endif /* MTPublicHeader_h */

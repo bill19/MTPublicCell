@@ -17,8 +17,40 @@
 
 @implementation AppDelegate
 
+#pragma mark --------test method(save LogInfo to File)--------
+- (void)redirectNSlogToDocumentFolder
+{
+    NSArray *paths =NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *documentDirectory = [paths objectAtIndex:0];
+    NSString *fileName = [NSString stringWithFormat:@"LogInfo.log"];
+    NSString *logFilePath = [documentDirectory stringByAppendingPathComponent:fileName];
+    freopen([logFilePath cStringUsingEncoding:NSASCIIStringEncoding],"a+", stdout);
+    freopen([logFilePath cStringUsingEncoding:NSASCIIStringEncoding],"a+", stderr);
+}
+
+void UncaughtExceptionHandler(NSException *exception) {
+    NSArray *arr = [exception callStackSymbols];//得到当前调用栈信息
+    NSString *reason = [exception reason];//非常重要，就是崩溃的原因
+    NSString *name = [exception name];//异常类型
+    NSLog(@"********************************** start record crash log **************************************");
+    NSLog(@"exception type : %@ \n crash reason : %@ \n call stack info : %@", name, reason, arr);
+    NSLog(@"********************************** end record crash log **************************************");
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+
+    //These code will cause that logInfo is saved to File
+
+    UIDevice *device = [UIDevice currentDevice];
+    if (![[device model]isEqualToString:@"iPad Simulator"]) {
+        NSSetUncaughtExceptionHandler (&UncaughtExceptionHandler);//记录异常
+        [self redirectNSlogToDocumentFolder];//将NSLog信息重定向到文件
+    }
+    //后面的代码省略
+
+
     // Override point for customization after application launch.
     //控制器1s
     ViewController *vc1 = [[ViewController alloc] init];
@@ -44,6 +76,10 @@
     tabbarVc.viewControllers = @[oneVC,twoVC,thirdVC];
 
     self.window.rootViewController = tabbarVc;
+
+
+
+
 
     return YES;
 }

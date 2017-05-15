@@ -7,6 +7,7 @@
 //
 
 #import "ViewController3.h"
+#import "MTPublicHeader.h"
 
 @interface ViewController3 ()
 
@@ -20,6 +21,13 @@
 
     self.title = @"vc3";
     self.view.backgroundColor = [UIColor yellowColor];
+
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] init];
+    [manager GET:@"http://api.dianping.com/v1/deal/find_deals" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@"%@", responseObject);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"%@", error);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

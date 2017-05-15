@@ -20,7 +20,10 @@
 #import "MTCacheController.h"
 #import "MTTextController.h"
 #import "MTAttriController.h"
+#import "MTWifiInfo.h"
 #import "MTRegularExpressionViewController.h"
+#import "IflyTestController.h"
+#import "MTPublicHeader.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate>
 //展示
@@ -37,9 +40,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+
+    NSString *str = @"cxncxncxnsdmdsjsdjkd.jpg";
+    NSString *str1 = @"cxncxncxnsdmdsjsdjkd_ls.jpg";
+    NSString *str2 = @"cxncxncxnsdmdsjsdjkd_l.jpg";
+    NSString *str3 = @"cxncxncxnsdmdsj_sdjkd_s.jpg";
+
+    [SHTTools cutStringWithPath:str];
+    [SHTTools cutStringWithPath:str1];
+    [SHTTools cutStringWithPath:str2];
+    [SHTTools cutStringWithPath:str3];
+
     self.title = @"PublicCell";
     [self setupTableView];
-    self.dataSource = @[@"HTML展示",@"ios框架化内容解析",@"基本UI控件展示",@"嵌入百度页面",@"c语言程序",@"show",@"testUrl",@"折线图",@"下拉菜单",@"ACSheet",@"MTAlertViewController",@"MTCache",@"MTTextController",@"MTAttriController",@"正则表达式",@"打电话"];
+    self.dataSource = @[@"HTML展示",@"ios框架化内容解析",@"基本UI控件展示",@"嵌入百度页面",@"c语言程序",@"show",@"testUrl",@"折线图",@"下拉菜单",@"ACSheet",@"MTAlertViewController",@"MTCache",@"MTTextController",@"MTAttriController",@"正则表达式",@"打电话",@"获取WIFI信息",@"科大讯飞"];
+
 }
 
 #pragma mark - 创建初始化
@@ -174,7 +189,14 @@
         }
             break;
         case 16:{
-            [self telPhone];
+            MTWifiInfo *wifiVc = [[MTWifiInfo alloc] init];
+            [self pushToVc:wifiVc andNumber:indexPath.row];
+        }
+            break;
+
+        case 17:{
+            IflyTestController *ifly = [[IflyTestController alloc] init];
+            [self pushToVc:ifly andNumber:indexPath.row];
         }
             break;
         default:

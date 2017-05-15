@@ -7,6 +7,7 @@
 //
 
 #import "FramerWorkViewController.h"
+#import "SHTTools.h"
 
 @interface FramerWorkViewController ()
 @property (nonatomic, weak) UIWebView *webview;
@@ -18,8 +19,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setupWebView];
+
+
+
+//    [self setupWebView];
 }
+
+
 
 - (void)setupWebView{
     UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.bounds];

@@ -34,4 +34,8 @@
  */
 - (NSData *)compressOriginalImage:(UIImage *)image toMaxDataSizeKBytes:(CGFloat)size;
 
+
+//头像/图片点击产生大图 ,截取路径
++ (NSString *)cutStringWithPath:(NSString *)path;
+
 @end

@@ -24,6 +24,15 @@
     self.view.backgroundColor = [UIColor redColor];
 
     [self.view addSubview:self.blurBackView];
+
+    int z = 10;
+    int (^addBlock)(int a, int b) = ^(int a , int b){
+
+        return a + b + z;
+    };
+    z = 0;
+    int result = addBlock(1,1);
+    NSLog(@"%zd -- %zd",result, z);
 }
 
 

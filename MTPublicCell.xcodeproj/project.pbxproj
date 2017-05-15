@@ -96,6 +96,8 @@
 		6D35824A1DE2C54600066B65 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3582391DE2C54600066B65 /* UIWebView+AFNetworking.m */; };
 		6D35824E1DE2C5CC00066B65 /* MTCacheObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D35824D1DE2C5CC00066B65 /* MTCacheObj.m */; };
 		6D3748E41E0777A100F1BB17 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3748E31E0777A100F1BB17 /* UIColor+Hex.m */; };
+		6D3748F01E07B25200F1BB17 /* NSDictionary+description.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3748EF1E07B25200F1BB17 /* NSDictionary+description.m */; };
+		6D3ACFAF1E4432AA008ECD83 /* MTWifiInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3ACFAE1E4432AA008ECD83 /* MTWifiInfo.m */; };
 		6D505A001DDE8E210045A5AB /* WSDropMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5059FF1DDE8E210045A5AB /* WSDropMenuView.m */; };
 		6D505A051DDE8E740045A5AB /* MTDropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D505A041DDE8E740045A5AB /* MTDropViewController.m */; };
 		6D505A141DDE90F80045A5AB /* MTACActionSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D505A131DDE90F80045A5AB /* MTACActionSheetController.m */; };
@@ -154,6 +156,19 @@
 		6DC914B21DCF6BA700CB8198 /* MTSwitchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC914B11DCF6BA700CB8198 /* MTSwitchModel.m */; };
 		6DD1A4C41DEEA48300B347BD /* MTAttributedTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1A4C31DEEA48300B347BD /* MTAttributedTools.m */; };
 		6DDA2FE21DD3077900E7F099 /* MTPublicCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDA2FE11DD3077900E7F099 /* MTPublicCController.m */; };
+		6DE44E6A1E56945F005B6841 /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE44E691E56945F005B6841 /* iflyMSC.framework */; };
+		6DE44E6C1E56966F005B6841 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE44E6B1E56966F005B6841 /* CoreGraphics.framework */; };
+		6DE44E6E1E569677005B6841 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE44E6D1E569677005B6841 /* UIKit.framework */; };
+		6DE44E701E569681005B6841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE44E6F1E569680005B6841 /* Foundation.framework */; };
+		6DE44E721E5696CD005B6841 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE44E711E5696CD005B6841 /* libz.tbd */; };
+		6DE44E741E5696DB005B6841 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE44E731E5696DB005B6841 /* CoreLocation.framework */; };
+		6DE44E761E5696E6005B6841 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE44E751E5696E6005B6841 /* CoreTelephony.framework */; };
+		6DE44E781E5696F1005B6841 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE44E771E5696F1005B6841 /* AVFoundation.framework */; };
+		6DE44E7A1E569706005B6841 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE44E791E569706005B6841 /* AddressBook.framework */; };
+		6DE44E7C1E569715005B6841 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE44E7B1E569715005B6841 /* AudioToolbox.framework */; };
+		6DE44E7E1E56971F005B6841 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE44E7D1E56971F005B6841 /* SystemConfiguration.framework */; };
+		6DE44E801E569729005B6841 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE44E7F1E569729005B6841 /* QuartzCore.framework */; };
+		6DE44E831E569781005B6841 /* IflyTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE44E821E569781005B6841 /* IflyTestController.m */; };
 		6DE934611DF7AA4500FEBFC9 /* SHTTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE934601DF7AA4500FEBFC9 /* SHTTools.m */; };
 		6DF5E3871DDC662F00B07B5D /* MTSelectBtnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF5E3861DDC662F00B07B5D /* MTSelectBtnCell.m */; };
 		6DF5E38A1DDC664500B07B5D /* MTSelectBtnModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF5E3891DDC664500B07B5D /* MTSelectBtnModel.m */; };
@@ -361,6 +376,10 @@
 		6D35824D1DE2C5CC00066B65 /* MTCacheObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCacheObj.m; sourceTree = "<group>"; };
 		6D3748E21E0777A100F1BB17 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		6D3748E31E0777A100F1BB17 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		6D3748EE1E07B25200F1BB17 /* NSDictionary+description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+description.h"; sourceTree = "<group>"; };
+		6D3748EF1E07B25200F1BB17 /* NSDictionary+description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+description.m"; sourceTree = "<group>"; };
+		6D3ACFAD1E4432AA008ECD83 /* MTWifiInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTWifiInfo.h; sourceTree = "<group>"; };
+		6D3ACFAE1E4432AA008ECD83 /* MTWifiInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTWifiInfo.m; sourceTree = "<group>"; };
 		6D5059FE1DDE8E210045A5AB /* WSDropMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDropMenuView.h; sourceTree = "<group>"; };
 		6D5059FF1DDE8E210045A5AB /* WSDropMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSDropMenuView.m; sourceTree = "<group>"; };
 		6D505A031DDE8E740045A5AB /* MTDropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDropViewController.h; sourceTree = "<group>"; };
@@ -473,6 +492,21 @@
 		6DD1A4C31DEEA48300B347BD /* MTAttributedTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAttributedTools.m; sourceTree = "<group>"; };
 		6DDA2FE01DD3077900E7F099 /* MTPublicCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPublicCController.h; sourceTree = "<group>"; };
 		6DDA2FE11DD3077900E7F099 /* MTPublicCController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPublicCController.m; sourceTree = "<group>"; };
+		6DE44E691E56945F005B6841 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
+		6DE44E6B1E56966F005B6841 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6DE44E6D1E569677005B6841 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6DE44E6F1E569680005B6841 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6DE44E711E5696CD005B6841 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		6DE44E731E5696DB005B6841 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6DE44E751E5696E6005B6841 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		6DE44E771E5696F1005B6841 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6DE44E791E569706005B6841 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		6DE44E7B1E569715005B6841 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6DE44E7D1E56971F005B6841 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6DE44E7F1E569729005B6841 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6DE44E811E569781005B6841 /* IflyTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IflyTestController.h; sourceTree = "<group>"; };
+		6DE44E821E569781005B6841 /* IflyTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IflyTestController.m; sourceTree = "<group>"; };
+		6DE44E841E56A531005B6841 /* Definition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Definition.h; sourceTree = "<group>"; };
 		6DE9345F1DF7AA4500FEBFC9 /* SHTTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTTools.h; sourceTree = "<group>"; };
 		6DE934601DF7AA4500FEBFC9 /* SHTTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTTools.m; sourceTree = "<group>"; };
 		6DF5E3851DDC662F00B07B5D /* MTSelectBtnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSelectBtnCell.h; sourceTree = "<group>"; };
@@ -486,6 +520,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DE44E801E569729005B6841 /* QuartzCore.framework in Frameworks */,
+				6DE44E7E1E56971F005B6841 /* SystemConfiguration.framework in Frameworks */,
+				6DE44E7C1E569715005B6841 /* AudioToolbox.framework in Frameworks */,
+				6DE44E7A1E569706005B6841 /* AddressBook.framework in Frameworks */,
+				6DE44E781E5696F1005B6841 /* AVFoundation.framework in Frameworks */,
+				6DE44E761E5696E6005B6841 /* CoreTelephony.framework in Frameworks */,
+				6DE44E741E5696DB005B6841 /* CoreLocation.framework in Frameworks */,
+				6DE44E721E5696CD005B6841 /* libz.tbd in Frameworks */,
+				6DE44E701E569681005B6841 /* Foundation.framework in Frameworks */,
+				6DE44E6E1E569677005B6841 /* UIKit.framework in Frameworks */,
+				6DE44E6C1E56966F005B6841 /* CoreGraphics.framework in Frameworks */,
+				6DE44E6A1E56945F005B6841 /* iflyMSC.framework in Frameworks */,
 				6D3582131DE2C1F800066B65 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +556,9 @@
 		6D03A3061DBF454300C91972 = {
 			isa = PBXGroup;
 			children = (
+				6DD2D83C1EC865E4009C67FD /* AskAnswer */,
+				6DE44E681E568DBE005B6841 /* 科大讯飞 */,
+				6D3ACFAC1E443286008ECD83 /* MTLocation */,
 				6D8E9CED1DE2D1DB001511F6 /* YYText */,
 				6D35824B1DE2C5BD00066B65 /* 请求本地缓存数据 */,
 				6DAFD1C91DDEFD3600A58D03 /* TYAlertController */,
@@ -761,6 +810,8 @@
 				6D5761CF1DF6BEAC006E08D4 /* ViewController3.m */,
 				6DA772D31DFE3ACB004CE685 /* MTRegularExpressionViewController.h */,
 				6DA772D41DFE3ACB004CE685 /* MTRegularExpressionViewController.m */,
+				6DE44E811E569781005B6841 /* IflyTestController.h */,
+				6DE44E821E569781005B6841 /* IflyTestController.m */,
 			);
 			path = PublicController;
 			sourceTree = "<group>";
@@ -816,6 +867,17 @@
 		6D3582111DE2C1F800066B65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6DE44E7F1E569729005B6841 /* QuartzCore.framework */,
+				6DE44E7D1E56971F005B6841 /* SystemConfiguration.framework */,
+				6DE44E7B1E569715005B6841 /* AudioToolbox.framework */,
+				6DE44E791E569706005B6841 /* AddressBook.framework */,
+				6DE44E771E5696F1005B6841 /* AVFoundation.framework */,
+				6DE44E751E5696E6005B6841 /* CoreTelephony.framework */,
+				6DE44E731E5696DB005B6841 /* CoreLocation.framework */,
+				6DE44E711E5696CD005B6841 /* libz.tbd */,
+				6DE44E6F1E569680005B6841 /* Foundation.framework */,
+				6DE44E6D1E569677005B6841 /* UIKit.framework */,
+				6DE44E6B1E56966F005B6841 /* CoreGraphics.framework */,
 				6D3582121DE2C1F800066B65 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
@@ -887,6 +949,16 @@
 			);
 			name = "请求本地缓存数据";
 			path = MTPublicCell/MTCacheObj;
+			sourceTree = "<group>";
+		};
+		6D3ACFAC1E443286008ECD83 /* MTLocation */ = {
+			isa = PBXGroup;
+			children = (
+				6D3ACFAD1E4432AA008ECD83 /* MTWifiInfo.h */,
+				6D3ACFAE1E4432AA008ECD83 /* MTWifiInfo.m */,
+			);
+			name = MTLocation;
+			path = MTPublicCell/MTLocation;
 			sourceTree = "<group>";
 		};
 		6D5059FD1DDE8E030045A5AB /* 下拉菜单 */ = {
@@ -1058,8 +1130,52 @@
 				6DA772D71DFE3BC6004CE685 /* MTRETool.m */,
 				6D3748E21E0777A100F1BB17 /* UIColor+Hex.h */,
 				6D3748E31E0777A100F1BB17 /* UIColor+Hex.m */,
+				6D3748EE1E07B25200F1BB17 /* NSDictionary+description.h */,
+				6D3748EF1E07B25200F1BB17 /* NSDictionary+description.m */,
 			);
 			path = MTTools;
+			sourceTree = "<group>";
+		};
+		6DD2D83C1EC865E4009C67FD /* AskAnswer */ = {
+			isa = PBXGroup;
+			children = (
+				6DD2D83D1EC865E4009C67FD /* Controller */,
+				6DD2D83E1EC865E4009C67FD /* Model */,
+				6DD2D83F1EC865E4009C67FD /* View */,
+			);
+			name = AskAnswer;
+			path = MTPublicCell/AskAnswer;
+			sourceTree = "<group>";
+		};
+		6DD2D83D1EC865E4009C67FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6DD2D83E1EC865E4009C67FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6DD2D83F1EC865E4009C67FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6DE44E681E568DBE005B6841 /* 科大讯飞 */ = {
+			isa = PBXGroup;
+			children = (
+				6DE44E841E56A531005B6841 /* Definition.h */,
+				6DE44E691E56945F005B6841 /* iflyMSC.framework */,
+			);
+			name = "科大讯飞";
+			path = "MTPublicCell/科大讯飞";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1319,6 +1435,7 @@
 				6D0997871DDD56D200C4869E /* SCCircleChart.m in Sources */,
 				6D7795181DD5AE0A00880E8A /* MTShowListController.m in Sources */,
 				6D8E9D2B1DE2D1DB001511F6 /* YYTextArchiver.m in Sources */,
+				6D3748F01E07B25200F1BB17 /* NSDictionary+description.m in Sources */,
 				6D35823E1DE2C54600066B65 /* AFURLResponseSerialization.m in Sources */,
 				6D8E9D221DE2D1DB001511F6 /* YYTextContainerView.m in Sources */,
 				6D8E9D271DE2D1DB001511F6 /* YYTextLayout.m in Sources */,
@@ -1342,7 +1459,9 @@
 				6DAFD1F51DDEFD3600A58D03 /* TYAlertScaleFadeAnimation.m in Sources */,
 				6DAFD1F11DDEFD3600A58D03 /* TYAlertController+TransitionAnimate.m in Sources */,
 				6D187CA91DCB2A3E002C07E8 /* ViewController.m in Sources */,
+				6DE44E831E569781005B6841 /* IflyTestController.m in Sources */,
 				6DAFD1F91DDEFD3600A58D03 /* UIView+TYAlertView.m in Sources */,
+				6D3ACFAF1E4432AA008ECD83 /* MTWifiInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1493,6 +1612,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = J6LD8332TN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MTPublicCell/科大讯飞",
+				);
 				INFOPLIST_FILE = MTPublicCell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1510,6 +1633,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = J6LD8332TN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MTPublicCell/科大讯飞",
+				);
 				INFOPLIST_FILE = MTPublicCell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
