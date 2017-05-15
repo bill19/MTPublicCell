@@ -71,6 +71,11 @@
 		6D187CD61DCB359F002C07E8 /* MTTextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D187CD51DCB359F002C07E8 /* MTTextModel.m */; };
 		6D187CDA1DCB40E4002C07E8 /* MTSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D187CD91DCB40E4002C07E8 /* MTSwitchCell.m */; };
 		6D2A65BF1DED87260011CA30 /* MTAttriController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2A65BE1DED87260011CA30 /* MTAttriController.m */; };
+		6D2F09191EC94D8C004E4C27 /* DXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F09181EC94D8C004E4C27 /* DXBaseViewController.m */; };
+		6D2F091C1EC94DA7004E4C27 /* DXAskAnswerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F091B1EC94DA7004E4C27 /* DXAskAnswerController.m */; };
+		6D2F091F1EC94DBD004E4C27 /* DXAskAnswerDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F091E1EC94DBD004E4C27 /* DXAskAnswerDetailController.m */; };
+		6D2F09221EC94DFD004E4C27 /* DXExpertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F09211EC94DFD004E4C27 /* DXExpertController.m */; };
+		6D2F09251EC94EB0004E4C27 /* DXMyAskAnswerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F09241EC94EB0004E4C27 /* DXMyAskAnswerController.m */; };
 		6D35820A1DE28FB000066B65 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3582031DE28FB000066B65 /* YYCache.m */; };
 		6D35820B1DE28FB000066B65 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3582051DE28FB000066B65 /* YYDiskCache.m */; };
 		6D35820C1DE28FB000066B65 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3582071DE28FB000066B65 /* YYKVStorage.m */; };
@@ -326,6 +331,16 @@
 		6D187CD91DCB40E4002C07E8 /* MTSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSwitchCell.m; sourceTree = "<group>"; };
 		6D2A65BD1DED87260011CA30 /* MTAttriController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAttriController.h; sourceTree = "<group>"; };
 		6D2A65BE1DED87260011CA30 /* MTAttriController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAttriController.m; sourceTree = "<group>"; };
+		6D2F09171EC94D8C004E4C27 /* DXBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXBaseViewController.h; sourceTree = "<group>"; };
+		6D2F09181EC94D8C004E4C27 /* DXBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXBaseViewController.m; sourceTree = "<group>"; };
+		6D2F091A1EC94DA7004E4C27 /* DXAskAnswerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXAskAnswerController.h; sourceTree = "<group>"; };
+		6D2F091B1EC94DA7004E4C27 /* DXAskAnswerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXAskAnswerController.m; sourceTree = "<group>"; };
+		6D2F091D1EC94DBD004E4C27 /* DXAskAnswerDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXAskAnswerDetailController.h; sourceTree = "<group>"; };
+		6D2F091E1EC94DBD004E4C27 /* DXAskAnswerDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXAskAnswerDetailController.m; sourceTree = "<group>"; };
+		6D2F09201EC94DFD004E4C27 /* DXExpertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXExpertController.h; sourceTree = "<group>"; };
+		6D2F09211EC94DFD004E4C27 /* DXExpertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXExpertController.m; sourceTree = "<group>"; };
+		6D2F09231EC94EB0004E4C27 /* DXMyAskAnswerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXMyAskAnswerController.h; sourceTree = "<group>"; };
+		6D2F09241EC94EB0004E4C27 /* DXMyAskAnswerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXMyAskAnswerController.m; sourceTree = "<group>"; };
 		6D3582021DE28FB000066B65 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
 		6D3582031DE28FB000066B65 /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
 		6D3582041DE28FB000066B65 /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
@@ -725,6 +740,7 @@
 		6D187C6B1DCB26E0002C07E8 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				6D2F09161EC94D6E004E4C27 /* Base */,
 				6DD1A4C11DEEA45C00B347BD /* MTTools */,
 				6D3582141DE2C54600066B65 /* AFNetworking */,
 				6D3582011DE28FB000066B65 /* YYCache */,
@@ -847,6 +863,15 @@
 				6D187CC51DCB2C04002C07E8 /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		6D2F09161EC94D6E004E4C27 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6D2F09171EC94D8C004E4C27 /* DXBaseViewController.h */,
+				6D2F09181EC94D8C004E4C27 /* DXBaseViewController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		6D3582011DE28FB000066B65 /* YYCache */ = {
@@ -1150,6 +1175,14 @@
 		6DD2D83D1EC865E4009C67FD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6D2F091A1EC94DA7004E4C27 /* DXAskAnswerController.h */,
+				6D2F091B1EC94DA7004E4C27 /* DXAskAnswerController.m */,
+				6D2F091D1EC94DBD004E4C27 /* DXAskAnswerDetailController.h */,
+				6D2F091E1EC94DBD004E4C27 /* DXAskAnswerDetailController.m */,
+				6D2F09201EC94DFD004E4C27 /* DXExpertController.h */,
+				6D2F09211EC94DFD004E4C27 /* DXExpertController.m */,
+				6D2F09231EC94EB0004E4C27 /* DXMyAskAnswerController.h */,
+				6D2F09241EC94EB0004E4C27 /* DXMyAskAnswerController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1332,6 +1365,7 @@
 				6D187C971DCB2708002C07E8 /* UIButton+WebCache.m in Sources */,
 				6D3582101DE29DE200066B65 /* MTCacheController.m in Sources */,
 				6D187CA81DCB2A3E002C07E8 /* UIFrameWorkController.m in Sources */,
+				6D2F09191EC94D8C004E4C27 /* DXBaseViewController.m in Sources */,
 				6D0997851DDD56D200C4869E /* SCChart.m in Sources */,
 				6DAFD1F31DDEFD3600A58D03 /* TYAlertDropDownAnimation.m in Sources */,
 				6D8E9D241DE2D1DB001511F6 /* YYTextEffectWindow.m in Sources */,
@@ -1432,11 +1466,13 @@
 				6D187C9C1DCB2708002C07E8 /* UIImageView+WebCache.m in Sources */,
 				6D8E9D311DE2D1DB001511F6 /* NSParagraphStyle+YYText.m in Sources */,
 				6D6997AB1DDC6492007B5EAB /* MTSelectModel.m in Sources */,
+				6D2F091C1EC94DA7004E4C27 /* DXAskAnswerController.m in Sources */,
 				6D0997871DDD56D200C4869E /* SCCircleChart.m in Sources */,
 				6D7795181DD5AE0A00880E8A /* MTShowListController.m in Sources */,
 				6D8E9D2B1DE2D1DB001511F6 /* YYTextArchiver.m in Sources */,
 				6D3748F01E07B25200F1BB17 /* NSDictionary+description.m in Sources */,
 				6D35823E1DE2C54600066B65 /* AFURLResponseSerialization.m in Sources */,
+				6D2F09221EC94DFD004E4C27 /* DXExpertController.m in Sources */,
 				6D8E9D221DE2D1DB001511F6 /* YYTextContainerView.m in Sources */,
 				6D8E9D271DE2D1DB001511F6 /* YYTextLayout.m in Sources */,
 				6DC914B21DCF6BA700CB8198 /* MTSwitchModel.m in Sources */,
@@ -1447,6 +1483,7 @@
 				6D187CCB1DCB2C04002C07E8 /* MASViewAttribute.m in Sources */,
 				6DAFD1ED1DDEFD3600A58D03 /* SettingModelView.m in Sources */,
 				6D5761CD1DF6BE8D006E08D4 /* ViewController2.m in Sources */,
+				6D2F09251EC94EB0004E4C27 /* DXMyAskAnswerController.m in Sources */,
 				6D187CCA1DCB2C04002C07E8 /* MASLayoutConstraint.m in Sources */,
 				6D187C9D1DCB2708002C07E8 /* UIView+WebCacheOperation.m in Sources */,
 				6D187C951DCB2708002C07E8 /* SDWebImageManager.m in Sources */,
@@ -1457,6 +1494,7 @@
 				6D03A3141DBF454300C91972 /* main.m in Sources */,
 				6D8E9D331DE2D1DB001511F6 /* UIView+YYText.m in Sources */,
 				6DAFD1F51DDEFD3600A58D03 /* TYAlertScaleFadeAnimation.m in Sources */,
+				6D2F091F1EC94DBD004E4C27 /* DXAskAnswerDetailController.m in Sources */,
 				6DAFD1F11DDEFD3600A58D03 /* TYAlertController+TransitionAnimate.m in Sources */,
 				6D187CA91DCB2A3E002C07E8 /* ViewController.m in Sources */,
 				6DE44E831E569781005B6841 /* IflyTestController.m in Sources */,
