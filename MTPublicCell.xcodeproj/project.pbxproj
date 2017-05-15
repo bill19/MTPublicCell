@@ -113,6 +113,9 @@
 		6D6997AE1DDC64B2007B5EAB /* MTSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6997AD1DDC64B2007B5EAB /* MTSelectCell.m */; };
 		6D6B17E41DDE9A4C0026A30A /* ACActionSheet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D6B17E11DDE9A4C0026A30A /* ACActionSheet.bundle */; };
 		6D6B17E51DDE9A4C0026A30A /* ACActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6B17E31DDE9A4C0026A30A /* ACActionSheet.m */; };
+		6D7282B91EC9952500B0B13D /* SHXIBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7282B81EC9952500B0B13D /* SHXIBController.m */; };
+		6D7282BD1EC9953B00B0B13D /* SHXibViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7282BB1EC9953B00B0B13D /* SHXibViewCell.m */; };
+		6D7282BE1EC9953B00B0B13D /* SHXibViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D7282BC1EC9953B00B0B13D /* SHXibViewCell.xib */; };
 		6D7795181DD5AE0A00880E8A /* MTShowListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7795171DD5AE0A00880E8A /* MTShowListController.m */; };
 		6D8E9D221DE2D1DB001511F6 /* YYTextContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8E9CF01DE2D1DB001511F6 /* YYTextContainerView.m */; };
 		6D8E9D231DE2D1DB001511F6 /* YYTextDebugOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8E9CF21DE2D1DB001511F6 /* YYTextDebugOption.m */; };
@@ -415,6 +418,11 @@
 		6D6B17E11DDE9A4C0026A30A /* ACActionSheet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ACActionSheet.bundle; sourceTree = "<group>"; };
 		6D6B17E21DDE9A4C0026A30A /* ACActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACActionSheet.h; sourceTree = "<group>"; };
 		6D6B17E31DDE9A4C0026A30A /* ACActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACActionSheet.m; sourceTree = "<group>"; };
+		6D7282B71EC9952500B0B13D /* SHXIBController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHXIBController.h; sourceTree = "<group>"; };
+		6D7282B81EC9952500B0B13D /* SHXIBController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHXIBController.m; sourceTree = "<group>"; };
+		6D7282BA1EC9953B00B0B13D /* SHXibViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHXibViewCell.h; sourceTree = "<group>"; };
+		6D7282BB1EC9953B00B0B13D /* SHXibViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHXibViewCell.m; sourceTree = "<group>"; };
+		6D7282BC1EC9953B00B0B13D /* SHXibViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHXibViewCell.xib; sourceTree = "<group>"; };
 		6D7795161DD5AE0A00880E8A /* MTShowListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTShowListController.h; sourceTree = "<group>"; };
 		6D7795171DD5AE0A00880E8A /* MTShowListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTShowListController.m; sourceTree = "<group>"; };
 		6D8E9CEF1DE2D1DB001511F6 /* YYTextContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextContainerView.h; sourceTree = "<group>"; };
@@ -574,6 +582,7 @@
 		6D03A3061DBF454300C91972 = {
 			isa = PBXGroup;
 			children = (
+				6D7282B31EC9950700B0B13D /* XIB+NSLayout */,
 				6DD2D83C1EC865E4009C67FD /* AskAnswer */,
 				6DE44E681E568DBE005B6841 /* 科大讯飞 */,
 				6D3ACFAC1E443286008ECD83 /* MTLocation */,
@@ -1012,6 +1021,43 @@
 			path = MTPublicCell/ACActionSheet;
 			sourceTree = "<group>";
 		};
+		6D7282B31EC9950700B0B13D /* XIB+NSLayout */ = {
+			isa = PBXGroup;
+			children = (
+				6D7282B41EC9950700B0B13D /* Controller */,
+				6D7282B51EC9950700B0B13D /* Model */,
+				6D7282B61EC9950700B0B13D /* View */,
+			);
+			name = "XIB+NSLayout";
+			path = "MTPublicCell/XIB+NSLayout";
+			sourceTree = "<group>";
+		};
+		6D7282B41EC9950700B0B13D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D7282B71EC9952500B0B13D /* SHXIBController.h */,
+				6D7282B81EC9952500B0B13D /* SHXIBController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6D7282B51EC9950700B0B13D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D7282B61EC9950700B0B13D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D7282BA1EC9953B00B0B13D /* SHXibViewCell.h */,
+				6D7282BB1EC9953B00B0B13D /* SHXibViewCell.m */,
+				6D7282BC1EC9953B00B0B13D /* SHXibViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6D8E9CED1DE2D1DB001511F6 /* YYText */ = {
 			isa = PBXGroup;
 			children = (
@@ -1329,6 +1375,7 @@
 				6D187CC61DCB2C04002C07E8 /* Info.plist in Resources */,
 				6D03A3251DBF454300C91972 /* LaunchScreen.storyboard in Resources */,
 				6D03A3221DBF454300C91972 /* Assets.xcassets in Resources */,
+				6D7282BE1EC9953B00B0B13D /* SHXibViewCell.xib in Resources */,
 				6DAFD1EC1DDEFD3600A58D03 /* screen.jpg in Resources */,
 				6DAFD1F01DDEFD3600A58D03 /* ShareView.xib in Resources */,
 				6DAFD1EE1DDEFD3600A58D03 /* SettingModelView.xib in Resources */,
@@ -1471,6 +1518,7 @@
 				6D187C9C1DCB2708002C07E8 /* UIImageView+WebCache.m in Sources */,
 				6D8E9D311DE2D1DB001511F6 /* NSParagraphStyle+YYText.m in Sources */,
 				6D2F09281EC95AE0004E4C27 /* DXToastMessage.m in Sources */,
+				6D7282BD1EC9953B00B0B13D /* SHXibViewCell.m in Sources */,
 				6D6997AB1DDC6492007B5EAB /* MTSelectModel.m in Sources */,
 				6D2F091C1EC94DA7004E4C27 /* DXAskAnswerController.m in Sources */,
 				6D0997871DDD56D200C4869E /* SCCircleChart.m in Sources */,
@@ -1497,6 +1545,7 @@
 				6D35823B1DE2C54600066B65 /* AFNetworkReachabilityManager.m in Sources */,
 				6D187C661DCB25E0002C07E8 /* MTTextCell.m in Sources */,
 				6D187CAA1DCB2A3E002C07E8 /* WebKitController.m in Sources */,
+				6D7282B91EC9952500B0B13D /* SHXIBController.m in Sources */,
 				6D03A3141DBF454300C91972 /* main.m in Sources */,
 				6D8E9D331DE2D1DB001511F6 /* UIView+YYText.m in Sources */,
 				6DAFD1F51DDEFD3600A58D03 /* TYAlertScaleFadeAnimation.m in Sources */,
