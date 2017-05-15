@@ -76,6 +76,7 @@
 		6D2F091F1EC94DBD004E4C27 /* DXAskAnswerDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F091E1EC94DBD004E4C27 /* DXAskAnswerDetailController.m */; };
 		6D2F09221EC94DFD004E4C27 /* DXExpertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F09211EC94DFD004E4C27 /* DXExpertController.m */; };
 		6D2F09251EC94EB0004E4C27 /* DXMyAskAnswerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F09241EC94EB0004E4C27 /* DXMyAskAnswerController.m */; };
+		6D2F09281EC95AE0004E4C27 /* DXToastMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F09271EC95AE0004E4C27 /* DXToastMessage.m */; };
 		6D35820A1DE28FB000066B65 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3582031DE28FB000066B65 /* YYCache.m */; };
 		6D35820B1DE28FB000066B65 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3582051DE28FB000066B65 /* YYDiskCache.m */; };
 		6D35820C1DE28FB000066B65 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3582071DE28FB000066B65 /* YYKVStorage.m */; };
@@ -341,6 +342,8 @@
 		6D2F09211EC94DFD004E4C27 /* DXExpertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXExpertController.m; sourceTree = "<group>"; };
 		6D2F09231EC94EB0004E4C27 /* DXMyAskAnswerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXMyAskAnswerController.h; sourceTree = "<group>"; };
 		6D2F09241EC94EB0004E4C27 /* DXMyAskAnswerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXMyAskAnswerController.m; sourceTree = "<group>"; };
+		6D2F09261EC95AE0004E4C27 /* DXToastMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXToastMessage.h; sourceTree = "<group>"; };
+		6D2F09271EC95AE0004E4C27 /* DXToastMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXToastMessage.m; sourceTree = "<group>"; };
 		6D3582021DE28FB000066B65 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
 		6D3582031DE28FB000066B65 /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
 		6D3582041DE28FB000066B65 /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
@@ -1157,6 +1160,8 @@
 				6D3748E31E0777A100F1BB17 /* UIColor+Hex.m */,
 				6D3748EE1E07B25200F1BB17 /* NSDictionary+description.h */,
 				6D3748EF1E07B25200F1BB17 /* NSDictionary+description.m */,
+				6D2F09261EC95AE0004E4C27 /* DXToastMessage.h */,
+				6D2F09271EC95AE0004E4C27 /* DXToastMessage.m */,
 			);
 			path = MTTools;
 			sourceTree = "<group>";
@@ -1465,6 +1470,7 @@
 				6D8E9D3C1DE2D33E001511F6 /* MTTextController.m in Sources */,
 				6D187C9C1DCB2708002C07E8 /* UIImageView+WebCache.m in Sources */,
 				6D8E9D311DE2D1DB001511F6 /* NSParagraphStyle+YYText.m in Sources */,
+				6D2F09281EC95AE0004E4C27 /* DXToastMessage.m in Sources */,
 				6D6997AB1DDC6492007B5EAB /* MTSelectModel.m in Sources */,
 				6D2F091C1EC94DA7004E4C27 /* DXAskAnswerController.m in Sources */,
 				6D0997871DDD56D200C4869E /* SCCircleChart.m in Sources */,
